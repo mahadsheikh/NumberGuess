@@ -23,6 +23,10 @@ while True:
         print("You guessed it")
         break
     else:
-        print("You guessed incorrect")
+        if usr_guess > random_number:
+            print("You were above the number")
+        elif usr_guess < random_number:
+            print("You were below the number")
+
 
 print("you got it in ",guesses," guesses")
